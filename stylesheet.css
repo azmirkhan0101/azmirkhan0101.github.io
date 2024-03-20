@@ -292,21 +292,41 @@ body
       /* SERVICES SECTION END */
 
       /* SKILLS */
-
-    #skills{
-        display: flex;
-        padding-bottom: 50px;
+      #skills{
+        padding-top: 10px;
     }
 
-    .container1{
-        width: 600px;
+
+    .container2{
+        padding-top: 20px;
+        margin-top: 80px;
+    }
+
+    .container2 h2{
+        font-size: 60px;
+        line-height: 1;
+        text-align: center;
+    }
+
+    .container2 h2 span{
+        color: #0ef;
+    }
+      /* EXPERIMENT */
+
+    /* #skills{
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 50px;
+    } */
+
+    /* .container2{
+        width: 50%;
         height: 500px;
         padding: 75px 10px;
         margin-left: 120px;
-    }
+    } */
 
     .heading1{
-        text-align: center;
         text-decoration: underline;
         text-underline-offset: 10px;
         text-decoration-thickness: 5px;
@@ -315,6 +335,11 @@ body
 
     .bar{
         font-size: 23px;
+    }
+
+    .Technical-bars{
+        width: 50%;
+        justify-content: center;
     }
 
     .Technical-bars .bar{
