@@ -692,3 +692,58 @@ body
         border-radius: 0.5rem;
     }
 
+
+
+    /* EXPERIMENT WITH SKILLS LIST  */
+    .skills-section {
+        padding: 20px;
+    }
+
+    .my-word {
+        font-size: 60px;
+        line-height: 1;
+        text-align: center;
+    }
+    .skills-word {
+        font-size: 60px;
+        line-height: 1;
+        color: #0ef;
+        text-align: center;
+    }
+    .skills-title {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    .skills-container {
+        margin-left: 40px;
+        width: 40%;
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        padding-left: 0px; /* Add some space between the line and the columns */
+    }
+    .skills-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        flex: 0 0 45%; /* Adjust as needed */
+    }
+    .skill-item {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+    }
+    .skill-bullet {
+        width: 20px; /* Adjust as needed */
+        height: 20px; /* Adjust as needed */
+        border-radius: 50%;
+        background-color: #4a4e69; /* Beautiful background color */
+        flex-shrink: 0;
+        margin-right: 15px;
+    }
+    .skill-name {
+        margin-left: 15px;
+        font-size: 18px;
+    }
