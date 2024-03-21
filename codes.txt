@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skills</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #1a1a2e; /* Dark blue background color */
+        color: #fff; /* Text color */
+    }
+    .skills-section {
+        padding: 20px;
+    }
+    .skills-title {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .skills-word {
+        color: red;
+    }
+    .skills-container {
+        display: flex;
+        justify-content: space-between;
+        border-left: 2px solid #fff; /* Vertical line between columns */
+        padding-left: 20px; /* Add some space between the line and the columns */
+    }
+    .skills-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        flex: 0 0 45%; /* Adjust as needed */
+    }
+    .skill-item {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+    }
+    .skill-bullet {
+        width: 20px; /* Adjust as needed */
+        height: 20px; /* Adjust as needed */
+        border-radius: 50%;
+        background-color: #4a4e69; /* Beautiful background color */
+        flex-shrink: 0;
+        margin-right: 15px;
+    }
+    .skill-name {
+        margin-left: 15px;
+    }
+</style>
+</head>
+<body>
+
+<section class="skills-section" id="mySkills">
+    <h1 class="skills-title">My <span class="skills-word">Skills</span></h1>
+    <div class="skills-container">
+        <ul class="skills-list">
+            <li class="skill-item">
+                <div class="skill-bullet"></div>
+                <div class="skill-name">Skill 1</div>
+            </li>
+            <li class="skill-item">
+                <div class="skill-bullet"></div>
+                <div class="skill-name">Skill 2</div>
+            </li>
+            <li class="skill-item">
+                <div class="skill-bullet"></div>
+                <div class="skill-name">Skill 3</div>
+            </li>
+            <li class="skill-item">
+                <div class="skill-bullet"></div>
+                <div class="skill-name">Skill 4</div>
+            </li>
+        </ul>
+        <ul class="skills-list">
+            <li class="skill-item">
+                <div class="skill-bullet"></div>
+                <div class="skill-name">Skill 5</div>
+            </li>
+            <li class="skill-item">
+                <div class="skill-bullet"></div>
+                <div class="skill-name">Skill 6</div>
+            </li>
+            <li class="skill-item">
+                <div class="skill-bullet"></div>
+                <div class="skill-name">Skill 7</div>
+            </li>
+            <li class="skill-item">
+                <div class="skill-bullet"></div>
+                <div class="skill-name">Skill 8</div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+</body>
+</html>

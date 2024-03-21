@@ -128,23 +128,13 @@ body
 
 .btn-box:hover
 {
-    box-shadow: 0 0 5px cyan,
-    0 0 25px cyan, 0 0 50px cyan,
-    0 0 100px cyan, 0 0 200px cyan;
+    
+    box-shadow: 0 0 20px #0ef;
     cursor: pointer;
 }
 
 
 /*about me */
-/* .about
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 2rem;
-    padding-bottom: 6rem;
-} */
 
 .about{
     display: grid;
@@ -154,7 +144,7 @@ body
     }
     
     .about-img img{
-    padding-bottom: 20%;
+    padding-bottom: 5%;
     max-width: 630px;
     height: auto;
     width: 100%;
@@ -192,7 +182,7 @@ body
       font-size: 20px;
       line-height: 1.4;
       margin-bottom: 4rem;
-      padding-top: 20px;
+      padding-top: 0px;
       }
       
       
@@ -210,8 +200,8 @@ body
     }
     
     
-    .container{
-      padding: 60px;
+    .service-container{
+      padding: 80px 60px 60px 60px;
     }
     
     
@@ -271,179 +261,74 @@ body
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 600;
-    box-shadow: 0 0 5px #0ef,
-    0 0 25px #0ef;
     }
     
     
     .read:hover{
-        box-shadow: 0 0 5px cyan,
-        0 0 25px cyan, 0 0 50px cyan,
-        0 0 100px cyan, 0 0 200px cyan;
+        
+    box-shadow: 0 0 10px #0ef;
     }
     
     
     .services-list div:hover{
       transform: translateY(-3px);
     }
-
-
-
       /* SERVICES SECTION END */
+      /* ######################################################################## */
 
-      /* SKILLS */
-      #skills{
-        padding-top: 10px;
-    }
-
-
-    .container2{
-        padding-top: 20px;
-        margin-top: 80px;
-    }
-
-    .container2 h2{
-        font-size: 60px;
-        line-height: 1;
-        text-align: center;
-    }
-
-    .container2 h2 span{
-        color: #0ef;
-    }
-      /* EXPERIMENT */
-
-    /* #skills{
-        display: flex;
-        flex-wrap: wrap;
-        padding-bottom: 50px;
-    } */
-
-    /* .container2{
-        width: 50%;
-        height: 500px;
-        padding: 75px 10px;
-        margin-left: 120px;
-    } */
-
-    .heading1{
-        text-decoration: underline;
-        text-underline-offset: 10px;
-        text-decoration-thickness: 5px;
-        margin-bottom: 50px;
-    }
-
-    .bar{
-        font-size: 23px;
-    }
-
-    .Technical-bars{
-        width: 50%;
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 80px 20px 20px 0px;
+        align-items: center;
         justify-content: center;
     }
-
-    .Technical-bars .bar{
-        margin-top: 40px 0; 
-    }
-
-    .Technical-bars .bar:first-child{
-        margin-top: 0;
-    }
-
-    .Technical-bars .bar:last-child{
-        margin-bottom: 0;
-    }
-
-    .Technical-bars .bar .info{
-        margin-bottom: 5px;
-    }
-
-    .Technical-bars .bar .info span{
-        font-size: 17px;
-        font-weight: 500;
-    }
-
-    .Technical-bars .bar .progress-line{
-        position: relative;
+    section#skills {
+        padding: 0px 0px 0px 60px;
         border-radius: 10px;
-        width: 100%;
-        height: 5px;
-        background-color: #000000;
+        align-items: center;
+        justify-content: center;
+        text-align: center; 
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .title-word1 {
+        font-size: 60px;
+        color: #fff; /* Different color for "My" */
+    }
+    .title-word2 {
+        font-size: 60px;
+        color: #48dbfb; /* Different color for "Skills" */
+    }
+    .skills {
+        display: flex;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 0px;
+        list-style: disc;
+        padding: 0;
+        margin: 0;
+    }
+    .skill {
+        padding: 15px;
+        text-align: center;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+    }
+    .skill::before {
+        content: "\2022";
+        color: #A0A0A0; /* Grey color for bullet points */
+        font-size: 60px;
+        margin-right: 10px;
+    }
+    .skill-text {
+        font-size: 25px;
+        text-align: left;
     }
 
-    .Technical-bars .bar .progress-line span{
-        position: absolute;
-        border-radius: 10px;
-        height: 100%;
-        background-color: #0ef;
-    }
-
-    .progress-line.html span{
-        width: 90%;
-    }
-
-    .progress-line.css span{
-        width: 60%;
-    }
-
-    .progress-line.javascript span{
-        width: 85%;
-    }
-
-    .progress-line.python span{
-        width: 50%;
-    }
-
-    .progress-line.react span{
-        width: 75%;
-    }
-
-    .progress-line span::after{
-        position: absolute;
-        padding: 1px 8px;
-        background-color: #000;
-        color: #fff;
-        font-size: 12px;
-        border-radius: 3px;
-        top: -28px;
-        right: -20px;
-    }
-
-    .progress-line.html span::after{
-        content: 90%;
-    }
-
-    .progress-line.css span::after{
-        content: 60%;
-    }
-
-    .progress-line.javascript span::after{
-        content: 85%;
-    }
-
-    .progress-line.python span::after{
-        content: 90%;
-    }
-
-    .progress-line.react span::after{
-        content: 90%;
-    }
-
-
-    .progress-line span::before{
-        content: "";
-        position: absolute;
-        width: 0;
-        height: 0;
-        border: 7px solid transparent;
-        border-bottom-width: 0px;
-        border-right-width: 0px;
-        border-top-color: #000;
-        top: -10px;
-        right: 0;
-    }
-
-
+    /* ########################################################################### */
     /* PROJECTS */
     #projects{
         padding-top: 20px;
@@ -538,6 +423,9 @@ body
 
 
 
+
+
+     /* ################################################################### */
     /* CONTACT  */
     .contact{
         display: grid;
@@ -608,7 +496,7 @@ body
         color: #0ef;
         text-decoration: none;
         margin: 30px 15px 30px 0;
-        transition: .5s ease;
+        transition: .1s ease;
     }
 
     .contact-icons i:hover{
@@ -661,10 +549,6 @@ body
     }
 
     .contact-form form .send:hover{
-        /* box-shadow: 0 0 1px cyan,
-        0 0 2px cyan, 0 0 5px cyan,
-        0 0 10px cyan, 0 0 15px cyan; */
-        /* background-color: #07c; */
         cursor: pointer;
         background: linear-gradient(to right, #005bea, #00c6fb);
     }
@@ -690,60 +574,4 @@ body
         font-size: 20px;
         padding: 10px;
         border-radius: 0.5rem;
-    }
-
-
-
-    /* EXPERIMENT WITH SKILLS LIST  */
-    .skills-section {
-        padding: 20px;
-    }
-
-    .my-word {
-        font-size: 60px;
-        line-height: 1;
-        text-align: center;
-    }
-    .skills-word {
-        font-size: 60px;
-        line-height: 1;
-        color: #0ef;
-        text-align: center;
-    }
-    .skills-title {
-        text-align: center;
-        font-size: 24px;
-        margin-bottom: 20px;
-    }
-    
-    .skills-container {
-        margin-left: 40px;
-        width: 40%;
-        display: flex;
-        justify-content: center; /* Center horizontally */
-        align-items: center; /* Center vertically */
-        padding-left: 0px; /* Add some space between the line and the columns */
-    }
-    .skills-list {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        flex: 0 0 45%; /* Adjust as needed */
-    }
-    .skill-item {
-        margin-bottom: 15px;
-        display: flex;
-        align-items: center;
-    }
-    .skill-bullet {
-        width: 20px; /* Adjust as needed */
-        height: 20px; /* Adjust as needed */
-        border-radius: 50%;
-        background-color: #4a4e69; /* Beautiful background color */
-        flex-shrink: 0;
-        margin-right: 15px;
-    }
-    .skill-name {
-        margin-left: 15px;
-        font-size: 18px;
     }
