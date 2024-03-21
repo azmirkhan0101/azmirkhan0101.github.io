@@ -54,6 +54,11 @@ body
 
 }
 
+/* Style for selected navigation item */
+.selected {
+    background-color: #00a884;
+}
+
 .home
 {
     position: relative;
