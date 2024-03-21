@@ -60,7 +60,7 @@ body
     width: 100%;
     justify-content: space-between;
     height: 100vh;
-    background: url(./cover02.png) no-repeat;
+    background: url(./home_cover.png) no-repeat;
     block-size: contain;
     background-position: center;
     display: flex;
@@ -275,9 +275,10 @@ body
     }
       /* SERVICES SECTION END */
       /* ######################################################################## */
+      /* SKILLS */
 
     .container {
-        max-width: 800px;
+        max-width: 1000px;
         margin: 0 auto;
         padding: 80px 20px 20px 0px;
         align-items: center;
@@ -311,7 +312,7 @@ body
         margin: 0;
     }
     .skill {
-        padding: 15px;
+        padding: 10px;
         text-align: center;
         border-radius: 5px;
         display: flex;
@@ -319,13 +320,15 @@ body
     }
     .skill::before {
         content: "\2022";
-        color: #A0A0A0; /* Grey color for bullet points */
+        color: #00a884; /* Grey color for bullet points */
         font-size: 60px;
         margin-right: 10px;
     }
     .skill-text {
-        font-size: 25px;
+        font-size: 23px;
         text-align: left;
+        /* color: lightcyan; */
+        color: silver;
     }
 
     /* ########################################################################### */
@@ -575,3 +578,62 @@ body
         padding: 10px;
         border-radius: 0.5rem;
     }
+
+
+
+
+    /* #################################################################### */
+    /* Snackbar styles */
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+}
+#snackbar.show {
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+
+
+
+/* Toast styles */
+.toast {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    transition: visibility 0s, transform 0.5s, opacity 0.5s;
+}
+
+.toast.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50px);
+}
+
