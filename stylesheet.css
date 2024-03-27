@@ -19,7 +19,7 @@ body
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 10%;
+    padding: 20px 5%;
     background: transparent;
     display: flex;
     justify-content: space-between;
@@ -37,6 +37,10 @@ body
     font-weight: 600;
 }
 
+.navbar ul li{
+    display: inline-block;
+}
+
 .navbar a
 {
     display: inline-block;
@@ -48,16 +52,15 @@ body
     transition: .3s;
 }
 
-.navbar a:hover
+.navbar a:hover,
+.navbar a:focus,
+.navbar a:active,
+.navbar a.selected
 {
     color: #0ef;
 
 }
 
-/* Style for selected navigation item */
-.selected {
-    background-color: #00a884;
-}
 
 .home
 {
@@ -138,48 +141,7 @@ body
     cursor: pointer;
 }
 
-
-/*about me */
-
-.about{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 1.5rem;
-    }
-    
-    .about-img img{
-    padding-bottom: 5%;
-    max-width: 630px;
-    height: auto;
-    width: 100%;
-    border-radius: 8px;
-    }
-    
-    .about-text h2{
-    font-size: 60px;
-    }
-    
-    .about-text h2 span{
-    color:#0ef;
-    }
-    
-    .about-text h4{
-    font-size: 29px;
-    font-weight: 600;
-    color: #fff;
-    line-height: 1.7;
-    margin: 15px 0 30px;
-    }
-    
-    .about-text p{
-    color: aliceblue;
-    font-size: 20px;
-    line-height: 1.4;
-    margin-bottom: 4rem;
-    }
-    
-    /* ####### */
+    /* ############################################################################ */
 
     /* SERVICES */
     #services{
@@ -325,15 +287,17 @@ body
     }
     .skill::before {
         content: "\2022";
-        color: #00a884; /* Grey color for bullet points */
+        /* color: #33d84e;  */
+        /* Grey color for bullet points */
+        color: #48dbfb; 
         font-size: 60px;
         margin-right: 10px;
     }
     .skill-text {
         font-size: 23px;
         text-align: left;
-        /* color: lightcyan; */
-        color: silver;
+        color: #E0E0E0;
+        /* color: silver; */
     }
 
     /* ########################################################################### */
@@ -445,9 +409,9 @@ body
     }
 
     .contact-text h2{
-        font-size: 90px;
+        font-size: 80px;
         line-height: 1;
-        text-align: center;
+        text-align: left;
     }
 
     .contact-text h2 span{
@@ -469,11 +433,11 @@ body
     }
 
     .contact-list{
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
     }
 
     .contact-list li{
-        margin-bottom: 10px;
+        margin-bottom: 1px;
         font-size: 30px;
         display: block;
     }
@@ -503,7 +467,7 @@ body
         font-size: 20px;
         color: #0ef;
         text-decoration: none;
-        margin: 30px 15px 30px 0;
+        margin: 10px 15px 10px 0;
         transition: .1s ease;
     }
 
@@ -535,7 +499,7 @@ body
 
     .contact-form textarea{
         resize: none;
-        height: 220px;
+        height: 200px;
     }
 
     ::placeholder{
