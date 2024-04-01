@@ -1,90 +1,59 @@
-#projects{
-    padding-top: 20px;
+#myprojects {
+    max-width: 800px;
+    margin: 0px auto;
+    padding: 60px 20px 20px 20px;
+     /* White container background */
+    /* background-color: #192a56; */
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
 }
-
-
-.main-text{
-    padding-top: 20px;
-    margin-top: 80px;
-}
-
-.main-text h2{
+#title {
     font-size: 60px;
-    line-height: 1;
     text-align: center;
+    margin-bottom: 30px;/* Dark gray text color */
 }
-
-.main-text h2 span{
-    color: #0ef;
-}
-
-.portfolio-content{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(359px, auto));
-}
-
-.row{
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-.row img{
-    width: 100%;
-    border-radius: 8px;
-    display: block;
-    transition: transform 0.5s;
-}
-
-.layer{
-    width: 100%;
-    height: 0;
-    background: linear-gradient(rgba(0,0,0,0.1),#0ef);
-    position: absolute;
-    border-radius: 8px;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
+#projects {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 0 40px;
-    transition: height 0.5s;
 }
-
-.layer h5{
-    color: #000;
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-
-.layer p{
-    color: #000;
-    font-size: 1rem;
-    line-height: 1.8;
-}
-
-.layer i{
-    color: #ff004f;
-    margin-top: 20px;
-    font-size: 20px;
-    background: #fff;
-    width: 60px;
-    height: 60px;
+.row {
     display: flex;
-    align-items: center;
     justify-content: center;
-    border-radius: 50%;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
-
-.row:hover img{
-    transform: scale(1.1);
+.row-title {
+    font-size: 35px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+    color: #BFBFBF; /* Medium gray title color */
 }
-
-.row:hover .layer{
-    height: 100%;
+.row-description {
+    margin-bottom: 10px;
+    font-style: italic;
+    color: #777; /* Light gray description color */
+    text-align: left;
+    width: 100%;
+}
+.project {
+    width: calc(33.33% - 10px); /* 33.33% width with some margin between */
+    margin: 0 5px; /* Adjust margin as needed */
+    text-align: center;
+    margin-bottom: 20px;
+}
+.project img {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    max-height: 100%;
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.project p {
+    color: #777; /* Light gray description color */
+    display: none; /* Hide the description */
 }
