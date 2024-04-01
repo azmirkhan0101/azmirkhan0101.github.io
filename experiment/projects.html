@@ -9,19 +9,20 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f2f2f2;
+            background-color: #f8f8f8; /* Light gray background */
         }
         .container {
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #fff;
+            background-color: #fff; /* White container background */
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         h1 {
             text-align: center;
             margin-bottom: 30px;
+            color: #333; /* Dark gray text color */
         }
         .projects {
             display: flex;
@@ -37,7 +38,15 @@
         .row-title {
             margin-bottom: 10px;
             font-weight: bold;
-            text-align: center;
+            text-align: left;
+            width: 100%;
+            color: #555; /* Medium gray title color */
+        }
+        .row-description {
+            margin-bottom: 10px;
+            font-style: italic;
+            color: #777; /* Light gray description color */
+            text-align: left;
             width: 100%;
         }
         .project {
@@ -56,50 +65,52 @@
             box-shadow: 0 0 5px rgba(0,0,0,0.1);
         }
         .project p {
-            color: #666;
+            color: #777; /* Light gray description color */
+            display: none; /* Hide the description */
         }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <h1>My Android App Projects</h1>
+<section>
+    <div class="container">
+        <h1>My Android App Projects</h1>
 
-    <div class="projects">
-        <div class="row">
-            <h2 class="row-title" style="text-align: left;">Row 1 Title</h2>
-            <div class="project">
-                <img src="suntime_widget_mockup.png" alt="Project 1 Screenshot">
+        <div class="projects">
+            <div class="row">
+                <h2 class="row-title">Row 1 Title</h2>
+                <div class="project">
+                    <img src="project1-screenshot.jpg" alt="Project 1 Screenshot">
+                </div>
+                <div class="project">
+                    <img src="project2-screenshot.jpg" alt="Project 2 Screenshot">
+                </div>
+                <div class="project">
+                    <img src="project3-screenshot.jpg" alt="Project 3 Screenshot">
+                </div>
+                <p class="row-description">Description for Row 1</p>
             </div>
-            <div class="project">
-                <img src="suntime_widget_mockup.png" alt="Project 2 Screenshot">
+            <div class="row">
+                <h2 class="row-title">Row 2 Title</h2>
+                <div class="project">
+                    <img src="project4-screenshot.jpg" alt="Project 4 Screenshot">
+                </div>
+                <div class="project">
+                    <img src="project5-screenshot.jpg" alt="Project 5 Screenshot">
+                </div>
+                <p class="row-description">Description for Row 2</p>
             </div>
-            <div class="project">
-                <img src="suntime_widget_mockup.png" alt="Project 3 Screenshot">
+            <div class="row">
+                <h2 class="row-title">Row 3 Title</h2>
+                <div class="project">
+                    <img src="project6-screenshot.jpg" alt="Project 6 Screenshot">
+                </div>
+                <p class="row-description">Description for Row 3</p>
             </div>
-            <p style="text-align: left;">Description of Project 1</p>
         </div>
-        <div class="row">
-            <h2 class="row-title">Row 2 Title</h2>
-            <div class="project">
-                <img src="project4-screenshot.jpg" alt="Project 4 Screenshot">
-                <p>Description of Project 4</p>
-            </div>
-            <div class="project">
-                <img src="project5-screenshot.jpg" alt="Project 5 Screenshot">
-                <p>Description of Project 5</p>
-            </div>
-        </div>
-        <div class="row">
-            <h2 class="row-title">Row 3 Title</h2>
-            <div class="project">
-                <img src="project6-screenshot.jpg" alt="Project 6 Screenshot">
-                <p>Description of Project 6</p>
-            </div>
-        </div>
+
     </div>
-
-</div>
+</section>
 
 </body>
 </html>
