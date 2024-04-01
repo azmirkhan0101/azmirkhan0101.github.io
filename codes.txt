@@ -99,3 +99,35 @@
 
 </body>
 </html>
+
+
+I have dedicated myself to learning Android app development since 2022,
+ continuously expanding my skills and knowledge in this dynamic field.
+
+
+
+
+ 
+
+/* Toast styles */
+.toast {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    transition: visibility 0s, transform 0.5s, opacity 0.5s;
+}
+
+.toast.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50px);
+}

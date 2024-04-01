@@ -1,0 +1,148 @@
+/* CONTACT  */
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 3rem;
+    padding-left: 30px;
+    margin-top: 130px;
+}
+
+.contact-text h2{
+    font-size: 80px;
+    line-height: 1;
+    text-align: left;
+}
+
+.contact-text h2 span{
+    color: #0ef;
+}
+
+.contact-text h4{
+    font-size: 20px;
+    margin: 15px 0;
+    color: rgb(228, 228, 228);
+    font-weight: 600;
+}
+
+.contact-text p{
+    font-size: 20px;
+    margin-bottom: 2rem;
+    color: rgb(177, 177, 177);
+    line-height: 30px;
+}
+
+.contact-list{
+    margin-bottom: 1rem;
+}
+
+.contact-list li{
+    margin-bottom: 1px;
+    font-size: 30px;
+    display: block;
+}
+
+.contact-list i{
+    display: inline-block;
+    color: #0ef;
+    font-size: 30px;
+    font-weight: 600;
+    transition: all .40s ease;
+}
+
+.contact-list li a:hover{
+    transform: scale(1.01) translateY(-5px);
+    color: #0ef;
+}
+
+.contact-icons i{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    margin: 10px 15px 10px 0;
+    transition: .1s ease;
+}
+
+.contact-icons i:hover{
+    background: #0ef;
+    color: #000;
+}
+
+.contact-form form{
+    position: relative;
+}
+
+.contact-form form input, form textarea{
+    border: none;
+    outline: none;
+    width: 90%;
+    padding: 18px;
+    background: #555557;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    border: 2px solid darkgray;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.contact-form textarea{
+    resize: none;
+    height: 200px;
+}
+
+::placeholder{
+    color: lightgray;
+}
+
+.contact-form form .send{
+    display: inline-block;
+padding: 12px 28px;
+background: #0ef;
+border-radius: 40px;
+font-size: 20px;
+color: #081b29;
+letter-spacing: 1px;
+text-decoration: none;
+font-weight: 600;
+border-width: 0px;
+transition: background-color 0.2s ease;
+}
+
+.contact-form form .send:hover{
+    cursor: pointer;
+    background: linear-gradient(to right, #005bea, #00c6fb);
+}
+
+.last-text p{
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    background: rgb(7, 85, 91);
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.top{
+    position: fixed;
+    bottom: 2.1rem;
+    right: 2.1rem;
+}
+
+.top i{
+    color: #000;
+    background: #0ef;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 0.5rem;
+}
