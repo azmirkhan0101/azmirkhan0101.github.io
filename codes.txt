@@ -131,3 +131,45 @@ I have dedicated myself to learning Android app development since 2022,
     opacity: 1;
     transform: translateX(-50%) translateY(-50px);
 }
+
+
+
+<section class="myprojects" id="myprojects">
+    <h1 id="title"><span style="color: #fff;">My</span> <span style="color: #48dbfb;">Projects</span></h1>
+
+    <p style="width: 100%; text-align: center; color:#dbbd12; margin-bottom: 20px; font-size: 27px;" class="row-description">NOTE: THIS SECTION IS UNDER DEVELPMENT!</p>
+
+
+    <div id="projects">
+        <div class="row">
+            <h2 class="row-title">1. SunTime Widget - Your Daily Sunrise and Sunset Companion</h2>
+            <div class="project">
+                <img src="./mockups/suntime_mockup.png" alt="Project 1 Screenshot">
+            </div>
+            <div class="project">
+                <img src="./mockups/suntime_mockup.png" alt="Project 2 Screenshot">
+            </div>
+            <div class="project">
+                <img src="./images/suntime_widget_mockup.png" alt="Project 3 Screenshot">
+            </div>
+            <p class="row-description">Description for Row 1</p>
+        </div>
+        <div class="row">
+            <h2 class="row-title">Row 2 Title</h2>
+            <div class="project">
+                <img src="./images/suntime_widget_mockup.png" alt="Project 4 Screenshot">
+            </div>
+            <div class="project">
+                <img src="./images/suntime_widget_mockup.png" alt="Project 5 Screenshot">
+            </div>
+            <p class="row-description">Description for Row 2</p>
+        </div>
+        <div class="row">
+            <h2 class="row-title">Row 3 Title</h2>
+            <div class="project">
+                <img src="./images/suntime_widget_mockup.png" alt="Project 6 Screenshot">
+            </div>
+            <p class="row-description">Description for Row 3</p>
+        </div>
+    </div>
+</section>
