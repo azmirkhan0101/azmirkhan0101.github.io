@@ -9,7 +9,7 @@
 }
 
 .contact-text h2{
-    font-size: 80px;
+    font-size: 70px;
     line-height: 1;
     text-align: left;
 }
@@ -28,7 +28,7 @@
 .contact-text p{
     font-size: 20px;
     margin-bottom: 2rem;
-    color: rgb(177, 177, 177);
+    color: #EFEFEF;
     line-height: 30px;
 }
 

@@ -32,9 +32,10 @@
     color: #BFBFBF; /* Medium gray title color */
 }
 .row-description {
+    font-size: 25px;
     margin-bottom: 10px;
-    font-style: italic;
-    color: #777; /* Light gray description color */
+    /* font-style: italic; */
+    color: #E5E5E5; /* Light gray description color */
     text-align: left;
     width: 100%;
 }
