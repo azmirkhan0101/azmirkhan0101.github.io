@@ -52,12 +52,15 @@ body
     transition: .3s;
 }
 
-.navbar a:hover,
+.navbar a:hover
+{
+    color: #ff8d8d;
+}
 .navbar a:focus,
 .navbar a:active,
 .navbar a.selected
 {
-    color: #0ef;
+    color: #ff5d5d;
 
 }
     

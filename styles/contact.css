@@ -9,16 +9,17 @@
 }
 
 .contact-text h2{
-    font-size: 70px;
+    font-size: 40px;
     line-height: 1;
     text-align: left;
 }
 
 .contact-text h2 span{
-    color: #0ef;
+    color: #ff4d4d;
 }
 
 .contact-text h4{
+    font-family: Arial, sans-serif;
     font-size: 20px;
     margin: 15px 0;
     color: rgb(228, 228, 228);
@@ -26,7 +27,8 @@
 }
 
 .contact-text p{
-    font-size: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
     margin-bottom: 2rem;
     color: #EFEFEF;
     line-height: 30px;
@@ -38,21 +40,21 @@
 
 .contact-list li{
     margin-bottom: 1px;
-    font-size: 30px;
+    font-size: 25px;
     display: block;
 }
 
 .contact-list i{
     display: inline-block;
-    color: #0ef;
-    font-size: 30px;
+    color: #ff4d4d;
+    font-size: 25px;
     font-weight: 600;
     transition: all .40s ease;
 }
 
 .contact-list li a:hover{
     transform: scale(1.01) translateY(-5px);
-    color: #0ef;
+    color: #ff4d4d;
 }
 
 .contact-icons i{
@@ -62,18 +64,18 @@
     width: 40px;
     height: 40px;
     background: transparent;
-    border: 2px solid #0ef;
+    border: 2px solid #ff4d4d;
     border-radius: 50%;
     font-size: 20px;
-    color: #0ef;
+    color: #ff4d4d;
     text-decoration: none;
     margin: 10px 15px 10px 0;
     transition: .1s ease;
 }
 
 .contact-icons i:hover{
-    background: #0ef;
-    color: #000;
+    background: #ff4d4d;
+    color: #fff;
 }
 
 .contact-form form{
@@ -108,10 +110,10 @@
 .contact-form form .send{
     display: inline-block;
 padding: 12px 28px;
-background: #0ef;
+background: #ff4d4d;
 border-radius: 40px;
 font-size: 20px;
-color: #081b29;
+color: #fff;
 letter-spacing: 1px;
 text-decoration: none;
 font-weight: 600;
@@ -121,7 +123,7 @@ transition: background-color 0.2s ease;
 
 .contact-form form .send:hover{
     cursor: pointer;
-    background: linear-gradient(to right, #005bea, #00c6fb);
+    background: linear-gradient(to right, #aa0000, #ff4d4d);
 }
 
 .last-text p{
@@ -140,8 +142,8 @@ transition: background-color 0.2s ease;
 }
 
 .top i{
-    color: #000;
-    background: #0ef;
+    color: #fff;
+    background: #ff4d4d;
     font-size: 20px;
     padding: 10px;
     border-radius: 0.5rem;

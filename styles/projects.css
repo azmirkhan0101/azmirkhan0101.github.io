@@ -8,7 +8,7 @@
     /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
 }
 #title {
-    font-size: 60px;
+    font-size: 40px;
     text-align: center;
     margin-bottom: 30px;/* Dark gray text color */
 }
@@ -24,7 +24,7 @@
     margin-bottom: 20px;
 }
 .row-title {
-    font-size: 35px;
+    font-size: 30px;
     margin-bottom: 10px;
     font-weight: bold;
     text-align: left;
@@ -32,12 +32,13 @@
     color: #BFBFBF; /* Medium gray title color */
 }
 .row-description {
-    font-size: 25px;
+    font-size: 23px;
     margin-bottom: 10px;
     /* font-style: italic; */
-    color: #E5E5E5; /* Light gray description color */
+    color: #D5D5D5; /* Light gray description color */
     text-align: left;
     width: 100%;
+    font-family: "Poppins", sans-serif;
 }
 .project {
     width: calc(33.33% - 10px); /* 33.33% width with some margin between */

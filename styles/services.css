@@ -1,37 +1,36 @@
 
 #services{
-    color: aliceblue; 
-    font-size: 20px;
+    color: #fff; 
+    font-size: 10px;
     line-height: 1.4;
     margin-bottom: 4rem;
     padding-top: 0px;
     align-items: center;
-    }
-    
+    } 
     
   .sub-title {
       width: 100%;
       justify-content: center;
   text-align: center;
-  font-size: 60px;
+  font-size: 40px;
   padding-bottom: 20px;
   }
   
   
   .sub-title span{
-    color:#0ef
+    color:#ff4d4d;
   }
   
   
   .service-container{
-    padding: 100px 60px 60px 60px;
+    padding: 100px 100px 60px 100px;
     align-items: center;
   }
   
   
   .services-list{
   display: flex;
-  grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
   grid-gap: 40px;
   margin-top: 20px;
   align-items: center;
@@ -41,14 +40,15 @@
   
   
   .services-list div{
+    flex: 1;
     border-color: transparent;
   padding: 40px;
-  font-size: 13px;
+  font-size: 5px;
   font-weight: 13px;
   border-right: 10px;
   border-radius: 20px;
-  box-shadow: 1px 1px 20px #012290F7, 
-  1px 1px 40px #0053B8F7
+  box-shadow: 1px 1px 25px rgba(255, 77, 77, 0.4), 
+  1px 1px 25px rgba(255, 77, 77, 0.4);
   }
   
   
@@ -58,7 +58,8 @@
   }
   
   .services-list div h2 {
-  font-size: 30px;
+    color: #e0e0e0;
+  font-size: 25px;
   font-weight: 500;
   margin-bottom: 15px;
   text-align: left;
@@ -66,14 +67,14 @@
 
   .services-list div p{
       text-decoration: none;
-      color: #fff;
+      color: #ff4d4d;
       font-size: 16px;
       }
   
   .services-list div a{
   text-decoration: none;
-  color: #000000;
-  font-size: 12px;
+  color: #fff;
+  font-size: 16px;
   margin-top: 20px;
   display: inline-block;
   text-align: center;
@@ -83,10 +84,10 @@
   .read{
   display: inline-block;
   padding: 12px 28px;
-  background:#0ef;
+  background:#ff4d4d;
   border-radius: 40px;
-  font-size: 16px;
-  color: #081b29;
+  font-size: 20px;
+  color: #ff4d4d;
   letter-spacing: 1px;
   text-decoration: none;
   font-weight: 600;
@@ -95,7 +96,7 @@
   
   .read:hover{
       
-  box-shadow: 0 0 10px #0ef;
+  box-shadow: 0 0 10px #ff4d4d;
   }
   
   

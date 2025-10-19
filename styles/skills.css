@@ -17,12 +17,12 @@ h2 {
     margin-bottom: 20px;
 }
 .title-word1 {
-    font-size: 60px;
+    font-size: 40px;
     color: #fff; /* Different color for "My" */
 }
 .title-word2 {
-    font-size: 60px;
-    color: #48dbfb; /* Different color for "Skills" */
+    font-size: 40px;
+    color: #ff4d4d; /* Different color for "Skills" */
 }
 .skills {
     display: flex;
@@ -41,14 +41,13 @@ h2 {
 }
 .skill::before {
     content: "\2022";
-    /* color: #33d84e;  */
-    /* Grey color for bullet points */
-    color: #48dbfb; 
-    font-size: 60px;
+    /* color for bullet points */
+    color: #ff4d4d; 
+    font-size: 50px;
     margin-right: 10px;
 }
 .skill-text {
-    font-size: 23px;
+    font-size: 20px;
     text-align: left;
     color: #E0E0E0;
     /* color: silver; */
