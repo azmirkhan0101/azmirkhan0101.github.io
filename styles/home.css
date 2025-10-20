@@ -5,13 +5,23 @@
     justify-content: space-between;
     align-items: center;
     height: 100vh;
-    padding: 70px 10% 0;
-    gap: 20px;
-    flex-wrap: wrap; /* allow wrapping on mobile */
+    padding: 70px 5% 0;
+    gap: 0px;
+}
+
+.myphoto {
+    min-width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.myphoto img {
+    width: 200px;
+    height: 200px;
 }
 
 .home-content {
-    min-width: 60%;
+    min-width: 70%;
     /* min-width: 600px; */
 }
 
@@ -79,10 +89,10 @@
 @media (max-width: 768px) {
     .home {
         flex-direction: column; /* stack image above text */
-        padding: 100px 5% 50px;
+        padding: 80px 5% 50px;
         height: auto; /* height adjusts to content */
         text-align: center; /* center all text */
-        gap: 30px;
+        gap: 10px;
     }
 
     .home-content {
@@ -114,9 +124,9 @@
         font-size: 14px;
     }
 
-    .home img {
-        width: 180px;
-        height: 180px;
-        margin-bottom: 15px;
+    .myphoto img {
+        width: 130px;
+        height: 130px;
+        margin-bottom: 0px;
     }
 }
