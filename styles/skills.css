@@ -1,54 +1,117 @@
 .container {
-    max-width: 1000px;
+    max-width: 80%;
     margin: 0 auto;
     padding: 80px 20px 20px 0px;
     align-items: center;
     justify-content: center;
 }
+
 section#skills {
-    padding: 0px 0px 0px 60px;
+    padding: 0px 0px 0px 0px;
     border-radius: 10px;
     align-items: center;
     justify-content: center;
     text-align: center; 
 }
+
 h2 {
     text-align: center;
     margin-bottom: 20px;
 }
+
+.title-word1, .title-word2 {
+    font-size: 40px;
+}
+
 .title-word1 {
-    font-size: 40px;
-    color: #fff; /* Different color for "My" */
+    color: #fff;
 }
+
 .title-word2 {
-    font-size: 40px;
-    color: #ff4d4d; /* Different color for "Skills" */
+    color: #ff4d4d;
 }
+
+/* ========== Skills Layout ========== */
 .skills {
-    display: flex;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 0px;
-    list-style: disc;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    gap: 12px 40px; /* vertical and horizontal gaps */
+    list-style: none;
     padding: 0;
     margin: 0;
 }
+
+/* Remove default list behavior from inner ULs */
+.skills ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: contents; /* <- key trick: flattens ULs into the grid */
+}
+
+/* Skill item */
 .skill {
-    padding: 10px;
-    text-align: center;
-    border-radius: 5px;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    border-radius: 5px;
+    position: relative;
+    line-height: 1.4;
+    min-height: 38px;
 }
+
+/* Bullet dot */
 .skill::before {
     content: "\2022";
-    /* color for bullet points */
-    color: #ff4d4d; 
-    font-size: 50px;
-    margin-right: 10px;
+    color: #ff4d4d;
+    font-size: 45px;
+    margin-right: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    flex-shrink: 0;
 }
+
 .skill-text {
-    font-size: 20px;
-    text-align: left;
+    font-size: 25px;
     color: #E0E0E0;
-    /* color: silver; */
+    flex: 1;
 }
+
+/* ========== Responsive Breakpoints ========== */
+@media (max-width: 768px) {
+
+    .container {
+        min-width: 100%;
+    }
+
+    section#skills {
+        padding: 0 20px;
+    }
+
+    /* 2 columns on mobile */
+    .skills {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px 20px;
+    }
+
+    .title-word1, .title-word2 {
+        font-size: 30px;
+    }
+
+    .skill-text {
+        font-size: 20px;
+    }
+
+    .skill::before {
+        font-size: 35px;
+        margin-right: 8px;
+    }
+
+    .skill {
+        min-height: 32px;
+    }
+}
+
