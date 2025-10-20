@@ -23,7 +23,7 @@
   
   
   .service-container{
-    padding: 100px 100px 60px 100px;
+    padding: 70px 0px 0px 0px;
     align-items: center;
   }
   
@@ -40,7 +40,8 @@
   
   
   .services-list div{
-    flex: 1;
+    width: fit-content;
+    /* flex: 1; */
     border-color: transparent;
   padding: 40px;
   font-size: 5px;

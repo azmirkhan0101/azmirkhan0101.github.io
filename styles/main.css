@@ -19,19 +19,20 @@ body
     top: 0;
     left: 0;
     width: 100%;
-    padding: 12px 5%;
-    background: transparent;
+    padding: 8px 5%;
+    /* background: transparent; */
+    background: #29b6f6;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    background: #051129;
+    /* background: #051129; */
 }
 
 .logo
 {
     position: relative;
-    font-size: 25px;
+    font-size: 20px;
     color: #fff;
     text-decoration: none;
     font-weight: 600;
@@ -44,7 +45,7 @@ body
 .navbar a
 {
     display: inline-block;
-    font-size: 25px;
+    font-size: 20px;
     color: #fff;
     text-decoration: none;
     font-weight: 500;
@@ -52,15 +53,15 @@ body
     transition: .3s;
 }
 
-.navbar a:hover
+.navbar a:hover 
 {
-    color: #ff8d8d;
+    color: #d0d0d0;
 }
 .navbar a:focus,
 .navbar a:active,
 .navbar a.selected
 {
-    color: #ff5d5d;
+    color: #000;
 
 }
     
