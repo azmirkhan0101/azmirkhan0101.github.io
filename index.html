@@ -16,21 +16,31 @@
 </head>
 <body>
 
-     <!-- HEADER -->
-    <header class="header">
-        <a href="#" class="logo" style="display: flex;justify-content: center;align-items: center;"><img style="color: white;" width="30px" height="30px" src="./images/main/azmir_logo.png"/>&nbsp;&nbsp;Portfolio</a>
+    <!-- HEADER -->
+<header class="header">
+  <a href="#" class="logo" style="display: flex;justify-content: center;align-items: center;">
+    <img class="aklogo" src="./images/main/azmir_logo.png"/>&nbsp;&nbsp;Portfolio
+  </a>
 
-        <nav class="navbar">
-          <ul>
-            <li type="none" class="selected"><a href="#home" class="nav-item">Home</a></li>
-            <li type="none"><a href="#myprojects" class="nav-item">Projects</a></li>
-            <li type="none"><a href="#skillcontainer" class="nav-item">Skills</a></li>
-            <li type="none"><a href="#services" class="nav-item">Services</a></li>
-            <li type="none"><a href="#contact" class="nav-item">Contact</a></li>
-          </ul>
-            
-        </nav>
-    </header>
+  <!-- MENU Icon -->
+  <div class="menu-icon" id="menu-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <ul>
+      <li type="none" class="selected"><a href="#home" class="nav-item">Home</a></li>
+      <li type="none"><a href="#myprojects" class="nav-item">Projects</a></li>
+      <li type="none"><a href="#skillcontainer" class="nav-item">Skills</a></li>
+      <li type="none"><a href="#services" class="nav-item">Services</a></li>
+      <li type="none"><a href="#contact" class="nav-item">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
 
     <!-- HOME  -->
     <section class="home" id="home">
@@ -65,9 +75,8 @@
                     <a href="https://www.linkedin.com/in/azmir-android"><i class='bx bxl-linkedin'></i></a>
                 </div>
                 <a href="./pages/about.html" class="btn-box">More About Me</a>
-
-                
         </div>
+        <img style="width: 200px; height: 200px;" src="./images/main/azmir_khan.png"/>
     </section>
 
 
@@ -358,6 +367,14 @@
      <!-- I DELETED THE SCRIPT FROM HERE  -->
   
   <script>
+
+    const menuIcon = document.getElementById("menu-icon");
+  const navbar = document.getElementById("navbar");
+
+  menuIcon.addEventListener("click", () => {
+    navbar.classList.toggle("active");
+    menuIcon.classList.toggle("open");
+  });
     
     //MENU SELECT
     // Get all navigation items

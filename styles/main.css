@@ -13,58 +13,150 @@ body
     background: #081b29;
 }
 
-.header
-{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 8px 5%;
-    /* background: transparent; */
-    background: #29b6f6;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-    /* background: #051129; */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 8px 5%;
+  background: #29b6f6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
 }
 
-.logo
-{
-    position: relative;
-    font-size: 20px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
+.logo {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
 }
 
-.navbar ul li{
-    display: inline-block;
+.aklogo {
+    width: 30px;
+    height: 30px;
 }
 
-.navbar a
-{
-    display: inline-block;
-    font-size: 20px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 35px;
-    transition: .3s;
+.navbar ul li {
+  display: inline-block;
 }
 
-.navbar a:hover 
-{
-    color: #d0d0d0;
+.navbar a {
+  display: inline-block;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: .3s;
 }
+
+.navbar a:hover {
+  color: #d0d0d0;
+}
+
 .navbar a:focus,
 .navbar a:active,
-.navbar a.selected
-{
-    color: #000;
+.navbar a.selected {
+  color: #000;
+}
+
+/* ---------- MOBILE MENU ---------- */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  width: 28px;
+  height: 22px;
+  justify-content: space-between;
+}
+
+.menu-icon span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #fff;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+/* Animation for hamburger icon */
+.menu-icon.open span:nth-child(1) {
+  transform: rotate(45deg) translateY(19px);
+}
+.menu-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+.menu-icon.open span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-19px);
+}
+
+/* ---------- RESPONSIVE STYLES ---------- */
+@media (max-width: 768px) {
+
+    /* ################## */
+    .header {
+    padding: 15px 6%; /* more height */
+  }
+
+  .logo {
+    font-size: 35px; /* slightly larger */
+  }
+  .aklogo {
+    width: 55px;
+    height: 55px;
+}
+  
+
+  .menu-icon {
+    display: flex;
+    width: 40px;
+    height: 32px;
+  }
+
+  .menu-icon span {
+    height: 3.5px;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 70px; /* matches the new header height */
+    right: 5%;
+    background: #29b6f6;
+    border-radius: 8px;
+    width: 210px;
+    text-align: right;
+    opacity: 0;
+    transform: translateY(-15px);
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+
+  .navbar.active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .navbar ul {
+    display: block;
+    padding: 12px 0;
+  }
+
+  .navbar ul li {
+    display: block;
+    margin: 12px 0;
+  }
+
+  .navbar a {
+    font-size: 32px; /* larger menu text */
+    padding: 10px 16px;
+    display: block;
+  }
 
 }
-    
+
     
 /* ################################################################# */
 /* Snackbar styles */
