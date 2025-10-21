@@ -43,6 +43,8 @@
         </nav>
     </header>
 
+    <img src="./images/main/cloud_photo.png" class="cloud" alt="cloud">
+
 
     <!-- HOME  -->
     <section class="home" id="home">
@@ -370,6 +372,14 @@
     <!-- Snackbar -->
     <div id="snackbar">Your message has been received!<br>I will reply you soon.</div>
     <!-- I DELETED THE SCRIPT FROM HERE  -->
+
+    <script>
+  const cloud = document.querySelector('.cloud');
+  cloud.addEventListener('animationend', () => {
+    cloud.style.display = 'none';
+  });
+</script>
+
 
     <script>
 

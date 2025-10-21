@@ -9,6 +9,43 @@
     gap: 0px;
 }
 
+.cloud {
+    position: fixed;
+    top: 100px;
+    /* adjust height */
+    left: -260px;
+    /* start off-screen */
+    width: 250px;
+    animation: moveCloud 16s linear forwards;
+    pointer-events: none;
+    z-index: 0;
+    animation-delay: 1.5s;
+    opacity: 0;
+}
+
+@keyframes moveCloud {
+    0% {
+        left: -260px;
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        left: calc(100vw);
+        /* move across screen */
+        opacity: 0;
+        /* vanish on the right */
+        visibility: hidden;
+        scale: 1.9;
+        transform: rotate(35deg);
+    }
+}
+
+
 .myphoto {
     min-width: 30%;
     display: flex;
@@ -80,7 +117,8 @@
 
 .tools-container {
     width: 100%;
-    display: flex; /* flex instead of inline-block */
+    display: flex;
+    /* flex instead of inline-block */
     margin-top: 20px;
     gap: 8px;
 }
@@ -88,11 +126,19 @@
 /* ----------- MOBILE RESPONSIVE ----------- */
 @media (max-width: 768px) {
     .home {
-        flex-direction: column; /* stack image above text */
+        flex-direction: column;
+        /* stack image above text */
         padding: 80px 5% 50px;
-        height: auto; /* height adjusts to content */
-        text-align: center; /* center all text */
+        height: auto;
+        /* height adjusts to content */
+        text-align: center;
+        /* center all text */
         gap: 10px;
+    }
+
+
+    .cloud {
+        animation-delay: 1.5s;
     }
 
     .home-content {
@@ -112,11 +158,13 @@
     }
 
     .tools-container {
-        justify-content: center; /* center icons */
+        justify-content: center;
+        /* center icons */
     }
 
     .home-sci a {
-        margin: 15px 8px; /* smaller spacing */
+        margin: 15px 8px;
+        /* smaller spacing */
     }
 
     .btn-box {
