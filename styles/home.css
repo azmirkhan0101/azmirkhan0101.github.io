@@ -9,6 +9,12 @@
     gap: 0px;
 }
 
+.cloud-container {
+  position: relative;
+  width: 100%;
+  top: 100px;
+}
+
 .cloud {
     position: fixed;
     top: 100px;
@@ -18,7 +24,7 @@
     width: 250px;
     animation: moveCloud 16s linear forwards;
     pointer-events: none;
-    z-index: 0;
+    z-index: -1;
     animation-delay: 1.5s;
     opacity: 0;
 }
