@@ -1,85 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #192a56; /* Dark blue background color */
-            color: #fff; /* Text color */
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #273c75; /* Dark blue background color for container */
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            overflow: hidden; /* Clear floats */
-        }
-
-        .profile-info {
-            overflow: hidden; /* Clear floats */
-            display: flex; /* Use flexbox for layout */
-            align-items: center; /* Center items vertically */
-            margin-bottom: 10px; /* Space between photo and skills */
-            padding-left: 10px;
-        }
-
-        .profile-photo {
-            width: 300px;
-            height: 300px;
-        }
-
-        p {
-            font-size: 1.5rem;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-
-        .skills-list {
-            list-style-type: none;
-            padding: 0;
-            font-size: 22px;
-        }
-
-        .skills-list li {
-            margin-bottom: 10px;
-        }
-
-        .skills-list li strong {
-            color: #ffd32a; /* Yellow color for skill titles */
-        }
-    </style>
+    <link rel="stylesheet" href="../styles/about.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="container">
-        <h1 style="font-size: 3.0rem; color: #0ef;margin: 0;text-align: center;">About Me</h1>
-        <div class="profile-info">
-            <div>
-                <img src="../images/main/azmir_insta06.png" alt="Your Photo" class="profile-photo">
-            </div>
-            <div>
-                <p>Hey, I'm <span style="font-size: 30px;color: #E0E0E0;"><b>Azmir Khan.</b></span><br>I'm a passionate <br><span style="font-size: 30px;color: #E0E0E0;"><b>Android App Developer.</b></span></p>
-        
-            </div>
-        </div>
-        <h2><u style="font-size: 25px;">Skills</u>:</h2>
-        <ul class="skills-list">
-            <li style="margin-bottom: 25px;"><strong>Programming Languages:</strong> Java, Kotlin</li>
-            <li style="margin-bottom: 25px;"><strong>Frameworks/Libraries:</strong> Android SDK</li>
-            <li><strong>Tools:</strong> Android Studio, Visual Studio Code, Git</li>
-        </ul>
 
-        
-        <div style="margin-top: 40px;">
-            <p><span style="font-size: 25px;"><u><b>Learning Since</b></u></span>:</h2>  2022</p>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <a href="../index.html" class="back-btn"><img src="../images/main/back_arrow.png"/>&nbsp;<span>Back</span></a>
+        <a href="#" class="logo">
+            <img class="aklogo" src="../images/main/azmir_logo.png" />&nbsp;&nbsp;Portfolio
+        </a>
+        <div class="right-space"></div>
+    </header>
+
+
+    <div class="container">
+        <h1 class="aboutme">About <span
+                style="color: #ff4b4b;">Me</span></h1>
+        <div class="profile-info">
+            <img src="../images/main/azmir_khan.png" alt="Your Photo" class="profile-photo">
+            <p class="myname">Azmir Khan</p>
+            <p class="mytitle">Mobile App Developer</p>
+            <p class="desc">I'm a Mobile App Developer who loves turning ideas into mobile apps
+                that make life easier. I've been developing Android and cross-platform apps
+                using Java and Flutter, focusing on clean design and performance.
+                Coding is not just my work—it's my way of creating
+                and exploring new possibilities every day.</p>
+        </div>
+        <div class="location">
+            <h3><i class="fa-solid fa-house"></i><span style="color: #EFDF00;">From:</span> Brahmanbaria, Chattogram, Bangladesh</h3>
+            <h3><i class="fa-solid fa-location-dot"></i><span style="color: #EFDF00;">Currently Living In:</span> Narayanganj, Dhaka, Bangladesh</h3>
+            <h3><i class="fa-solid fa-envelope"></i><span style="color: #EFDF00;">Email:</span> azmir.azamkhan@gmail.com</h3>
+            <h3><i class="fa-brands fa-whatsapp"></i><span style="color: #EFDF00;">Whatsapp:</span> +8801609-537568</h3>
         </div>
     </div>
 </body>
+
+<!-- <p><i class="fa-solid fa-envelope"></i> azmir.dev@example.com</p>
+  <p><i class="fa-brands fa-whatsapp"></i> +880 1XXXXXXX</p> -->
+
 </html>

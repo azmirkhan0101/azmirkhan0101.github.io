@@ -1,0 +1,217 @@
+body {
+    /* font-family: Arial, sans-serif; */
+    font-family: 'Calibri', 'Calibri Light', 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #081b39;
+    /* Dark blue background color */
+    color: #fff;
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px 0px;
+    background: #29b6f6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.back-btn {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    color: #081b29;
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+    padding-left: 40px;
+}
+
+.back-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.back-btn:hover {
+    color: #304b69;
+}
+
+.right-space {
+    padding-right: 40px;
+    width: 200px;
+    /* same width as the back arrow */
+}
+
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: "Times New Roman", Times, serif;
+}
+
+
+.aklogo {
+    width: 30px;
+    height: 30px;
+}
+
+.container {
+    max-width: 80%;
+    margin: 60px auto 25px;
+    padding: 20px;
+    background-color: #0f4b59;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.aboutme {
+    font-size: 2rem;
+     color: #fff;
+     margin: 0;
+     text-align: center;
+}
+
+.profile-info {
+    display: grid;
+    flex-direction: row;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.profile-photo {
+    width: 160px;
+    height: 160px;
+}
+
+.myname {
+    font-family: 'Georgia', serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: #4EDB77;
+    padding: 0;
+    margin: 15px 0px 0px;
+}
+
+.mytitle {
+    font-family: 'Calibri', 'Calibri Light', 'Segoe UI', sans-serif;
+    font-size: 25px;
+    color: #EFDF00;
+    font-weight: bold;
+    padding: 0;
+    margin: 10px 0px 0px;
+}
+
+.desc {
+    font-family: 'Calibri', 'Calibri Light', 'Segoe UI', sans-serif;
+    font-size: 20px;
+    color: #f0f0f0;
+    font-weight: 350;
+    padding: 0;
+    margin: 30px 20px 0px;
+}
+
+.location {
+    margin: 30px 20px 0px;
+}
+
+.location h3 i {
+    margin: 0px 8px 0px 0px;
+    color: #ff4b4b;
+}
+
+
+/* ---------- RESPONSIVE STYLES ---------- */
+@media (max-width: 768px) {
+
+
+    .back-btn {
+        width: 50px;
+        display: flex;
+        align-items: center;
+        color: #081b29;
+        font-size: 22px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: 0.3s;
+        padding-left: 30px;
+    }
+
+    
+.right-space {
+    padding-right: 30px;
+    width: 50px;
+    /* same width as the back arrow */
+}
+
+    .back-btn span {
+        visibility: collapse;
+    }
+
+    
+.back-btn img {
+    width: 30px;
+    height: 25px;
+}
+
+
+.container {
+    max-width: 100%;
+    margin: 0px;
+    padding: 60px 0px 20px;
+    background-color: #0f4b59;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.aboutme {
+    font-size: 30px;
+     color: #fff;
+     margin: 0;
+     text-align: center;
+}
+
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+}
+
+
+.myname {
+    font-size: 25px;
+}
+
+.mytitle {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.desc {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #f0f0f0;
+    font-weight: 350;
+    padding: 0;
+    margin: 30px 20px 0px;
+}
+
+.location h3 {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+}
