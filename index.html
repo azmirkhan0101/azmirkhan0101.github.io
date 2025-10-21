@@ -44,8 +44,8 @@
     </header>
 
     <div class="cloud-container">
-            <img src="./images/main/cloud_photo.png" class="cloud" alt="cloud">
-        </div>
+        <img src="./images/main/cloud_photo.png" class="cloud" alt="cloud">
+    </div>
 
     <!-- HOME  -->
     <section class="home" id="home">
@@ -255,35 +255,35 @@
         <section id="skills">
             <h2><span class="title-word1">My </span> <span class="title-word2">Skills</span></h2>
             <div class="skills">
-    <ul>
-        <li class="skill"><span class="skill-text">Native Android</span></li>
-        <li class="skill"><span class="skill-text">Java</span></li>
-        <li class="skill"><span class="skill-text">Flutter</span></li>
-        <li class="skill"><span class="skill-text">Dart</span></li>
-        <li class="skill"><span class="skill-text">Retrofit</span></li>
-    </ul>
-    <ul>
-        <li class="skill"><span class="skill-text">Volley</span></li>
-        <li class="skill"><span class="skill-text">HTTP</span></li>
-        <li class="skill"><span class="skill-text">Dio</span></li>
-        <li class="skill"><span class="skill-text">Rest API</span></li>
-        <li class="skill"><span class="skill-text">Realtime Database</span></li>
-    </ul>
-    <ul>
-        <li class="skill"><span class="skill-text">Firebase</span></li>
-        <li class="skill"><span class="skill-text">Maps and GPS</span></li>
-        <li class="skill"><span class="skill-text">Sensors</span></li>
-        <li class="skill"><span class="skill-text">SQLite and Room</span></li>
-        <li class="skill"><span class="skill-text">Google/Facebook Login</span></li>
-    </ul>
-    <ul>
-        <li class="skill"><span class="skill-text">Git & Github</span></li>
-        <li class="skill"><span class="skill-text">Animations</span></li>
-        <li class="skill"><span class="skill-text">Testing</span></li>
-        <li class="skill"><span class="skill-text">Debugging</span></li>
-        <li class="skill"><span class="skill-text">App Release</span></li>
-    </ul>
-</div>
+                <ul>
+                    <li class="skill"><span class="skill-text">Native Android</span></li>
+                    <li class="skill"><span class="skill-text">Java</span></li>
+                    <li class="skill"><span class="skill-text">Flutter</span></li>
+                    <li class="skill"><span class="skill-text">Dart</span></li>
+                    <li class="skill"><span class="skill-text">Retrofit</span></li>
+                </ul>
+                <ul>
+                    <li class="skill"><span class="skill-text">Volley</span></li>
+                    <li class="skill"><span class="skill-text">HTTP</span></li>
+                    <li class="skill"><span class="skill-text">Dio</span></li>
+                    <li class="skill"><span class="skill-text">Rest API</span></li>
+                    <li class="skill"><span class="skill-text">Realtime Database</span></li>
+                </ul>
+                <ul>
+                    <li class="skill"><span class="skill-text">Firebase</span></li>
+                    <li class="skill"><span class="skill-text">Maps and GPS</span></li>
+                    <li class="skill"><span class="skill-text">Sensors</span></li>
+                    <li class="skill"><span class="skill-text">SQLite and Room</span></li>
+                    <li class="skill"><span class="skill-text">Google/Facebook Login</span></li>
+                </ul>
+                <ul>
+                    <li class="skill"><span class="skill-text">Git & Github</span></li>
+                    <li class="skill"><span class="skill-text">Animations</span></li>
+                    <li class="skill"><span class="skill-text">Testing</span></li>
+                    <li class="skill"><span class="skill-text">Debugging</span></li>
+                    <li class="skill"><span class="skill-text">App Release</span></li>
+                </ul>
+            </div>
 
         </section>
     </div>
@@ -374,12 +374,23 @@
     <div id="snackbar">Your message has been received!<br>I will reply you soon.</div>
     <!-- I DELETED THE SCRIPT FROM HERE  -->
 
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MZKNST81EQ"></script>
     <script>
-  const cloud = document.querySelector('.cloud');
-  cloud.addEventListener('animationend', () => {
-    cloud.style.display = 'none';
-  });
-</script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MZKNST81EQ');
+    </script>
+
+    <script>
+        const cloud = document.querySelector('.cloud');
+        cloud.addEventListener('animationend', () => {
+            cloud.style.display = 'none';
+        });
+    </script>
 
 
     <script>
