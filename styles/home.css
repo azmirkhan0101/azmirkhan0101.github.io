@@ -52,6 +52,113 @@
 }
 
 
+.wheel-container {
+            position: fixed;
+            top: -15%;
+            right: -19%;
+        }
+
+        .icon-wheel {
+            z-index: 10;
+            position: fixed;
+            top: -15%;
+            right: -19%;
+            /* top: 40%;
+            right: 50%; */
+            width: 200px;
+            height: 200px;
+            transform-origin: 50% 50%;
+            transform: translate(-50%, -50%);
+            animation: step-rotate 20s ease-in-out infinite;
+            animation-delay: 2s;
+        }
+
+        .icon-wheel img {
+            z-index: 100;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: contain;
+            transform-origin: 0 0;
+        }
+
+        /* place images evenly in a circle (5 icons) */
+        .icon-wheel img:nth-child(1) {
+            transform: rotate(0deg) translateY(-200px) rotate(145deg);
+        }
+
+        .icon-wheel img:nth-child(2) {
+            transform: rotate(72deg) translateY(-200px) rotate(145deg);
+        }
+
+        .icon-wheel img:nth-child(3) {
+            transform: rotate(144deg) translateY(-200px) rotate(145deg);
+        }
+
+        .icon-wheel img:nth-child(4) {
+            transform: rotate(216deg) translateY(-200px) rotate(145deg);
+        }
+
+        .icon-wheel img:nth-child(5) {
+            transform: rotate(288deg) translateY(-200px) rotate(145deg);
+        }
+
+        @keyframes step-rotate {
+
+            /* Step 1 */
+            0% {
+                transform: translate(-50%, -50%) rotate(-0deg);
+            }
+
+            10% {
+                transform: translate(-50%, -50%) rotate(-72deg);
+            }
+
+            20% {
+                transform: translate(-50%, -50%) rotate(-72deg);
+            }
+
+            /* Step 2 */
+            30% {
+                transform: translate(-50%, -50%) rotate(-144deg);
+            }
+
+            40% {
+                transform: translate(-50%, -50%) rotate(-144deg);
+            }
+
+            /* Step 3 -216 */
+            50% {
+                transform: translate(-50%, -50%) rotate(-216deg);
+            }
+
+            60% {
+                transform: translate(-50%, -50%) rotate(-216deg);
+            }
+
+            /* Step 4 */
+            70% {
+                transform: translate(-50%, -50%) rotate(-288deg);
+            }
+
+            80% {
+                transform: translate(-50%, -50%) rotate(-288deg);
+            }
+
+            /* Step 5 */
+            90% {
+                transform: translate(-50%, -50%) rotate(-360deg);
+            }
+
+            100% {
+                transform: translate(-50%, -50%) rotate(-360deg);
+            }
+        }
+
+
 .myphoto {
     min-width: 30%;
     display: flex;
@@ -141,6 +248,10 @@
         /* center all text */
         gap: 10px;
     }
+
+    .wheel-container {
+    display: none;
+  }
 
 
     .cloud {
