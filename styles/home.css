@@ -12,17 +12,17 @@
 .cloud-container {
   position: relative;
   width: 100%;
-  top: 100px;
+  top: 60px;
 }
 
 .cloud {
     position: fixed;
-    top: 100px;
+    top: 60px;
     /* adjust height */
-    left: -260px;
+    left: -200px;
     /* start off-screen */
-    width: 250px;
-    animation: moveCloud 16s linear forwards;
+    width: 180px;
+    animation: moveCloud 10s linear forwards;
     pointer-events: none;
     z-index: -1;
     animation-delay: 1.5s;
@@ -31,7 +31,7 @@
 
 @keyframes moveCloud {
     0% {
-        left: -260px;
+        left: -200px;
         opacity: 1;
         transform: rotate(0deg);
     }

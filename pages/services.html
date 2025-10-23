@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +13,46 @@
             /* Dark blue background color */
             /* background-color: #192a56;  */
             background-color: #081b29;
-            color: #f0f0f0; /* Text color */
+            color: #f0f0f0;
+            /* Text color */
+        }
+
+
+        .cloud-container {
+            position: relative;
+            width: 100%;
+            top: 40px;
+        }
+
+        .cloud {
+            position: fixed;
+            top: 40px;
+            right: 0px;
+            width: 50px;
+            animation: moveCloud 3s ease forwards;
+            pointer-events: none;
+            z-index: 10;
+            animation-delay: 0.5s;
+            opacity: 0;
+        }
+
+        @keyframes moveCloud {
+            0% {
+                opacity: 1;
+                right: -100px;
+                transform: rotate(0deg);
+            }
+
+            60% {
+                right: -25px;
+                transform: rotate(-90deg);
+            }
+
+            100% {
+                opacity: 1;
+                right: 0px;
+                transform: rotate(-90deg);
+            }
         }
 
         .services-section {
@@ -21,16 +61,17 @@
             padding: 20px;
             /* Dark blue background color for section */
             /* background-color: #273c75;  */
-            background-color: transparent; 
+            background-color: transparent;
             border-radius: 10px;
-            box-shadow: 1px 1px 30px #ffd32a, 
-    1px 1px 25px  #ffd32a
+            box-shadow: 1px 1px 30px #ffd32a,
+                1px 1px 25px #ffd32a
         }
 
         .services-section h2 {
             margin-bottom: 20px;
             font-size: 2.5rem;
-            color: #0abde3; /* Light blue color for heading */
+            color: #0abde3;
+            /* Light blue color for heading */
         }
 
         .service {
@@ -39,7 +80,8 @@
 
         .service h3 {
             font-size: 1.5rem;
-            color: #ffd32a; /* Yellow color for service titles */
+            color: #ffd32a;
+            /* Yellow color for service titles */
         }
 
         .service p {
@@ -48,25 +90,38 @@
         }
     </style>
 </head>
+
 <body>
+
+    <div class="cloud-container">
+        <img src="../images/main/android.png" class="cloud" alt="cloud">
+    </div>
+
     <section class="services-section">
         <h2>My Services</h2>
         <div class="service">
             <h3>Android App Development</h3>
-            <p>I specialize in developing native Android applications tailored to meet your specific requirements. Whether you need a simple utility app or a complex enterprise solution, I can bring your ideas to life.</p>
+            <p>I specialize in developing native Android applications tailored to meet your specific requirements.
+                Whether you need a simple utility app or a complex enterprise solution, I can bring your ideas to life.
+            </p>
         </div>
         <div class="service">
             <h3>UI/UX Design</h3>
-            <p>Good design is essential for the success of any app. I focus on creating intuitive and visually appealing user interfaces that enhance the user experience and drive engagement.</p>
+            <p>Good design is essential for the success of any app. I focus on creating intuitive and visually appealing
+                user interfaces that enhance the user experience and drive engagement.</p>
         </div>
         <div class="service">
             <h3>App Testing and Optimization</h3>
-            <p>Ensuring that your app performs flawlessly across different devices and screen sizes is crucial. I conduct thorough testing and optimization to deliver high-quality apps that perform well in the market.</p>
+            <p>Ensuring that your app performs flawlessly across different devices and screen sizes is crucial. I
+                conduct thorough testing and optimization to deliver high-quality apps that perform well in the market.
+            </p>
         </div>
         <div class="service">
             <h3>App Maintenance and Support</h3>
-            <p>My services don't end with the launch of your app. I provide ongoing maintenance and support to keep your app up-to-date, secure, and compatible with the latest Android versions.</p>
+            <p>My services don't end with the launch of your app. I provide ongoing maintenance and support to keep your
+                app up-to-date, secure, and compatible with the latest Android versions.</p>
         </div>
     </section>
 </body>
+
 </html>
